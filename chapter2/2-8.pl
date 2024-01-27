@@ -38,3 +38,18 @@
 # );
 
 # print join($", @froots) . "\n";
+
+# $x = ( ($a, $b) = (7,7,7) );    # set $x to 3, not 2
+# print $x ."\n";
+# $x = ( ($a, $b) = funk() );     # set $x to funk()'s return count
+# print $x ."\n";
+# $x = ( () = funk() );           # also set $x to funk()'s return count
+# print $x ."\n";
+
+# リスト関数は返すものがないときは空リストを返す
+# 空リストを代入すると0が得られ、これは偽として扱われる
+# while (($login, $password) = getpwent) {
+#     if (crypt($login, $password) eq $password) {
+#         print "$login has an insecure password!\n";
+#     }
+# }
