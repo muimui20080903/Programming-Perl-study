@@ -6,3 +6,4 @@ print $map{'red'} . "\n";
     'green' => 0x00ff00,
     'blue'  => 0x0000ff,
 );
+                                                                                                                                                         
